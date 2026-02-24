@@ -1,0 +1,67 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Site layout */
+body {
+  grid-template-columns: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 0.5px;
+  min-height: 100svh;
+  background-color: rgb(255, 255, 255);
+}
+header,
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.galleri {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.category_list_container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 kolonne på mobil */
+  gap: 0.5rem;
+  padding: 1%;
+}
+
+.category_item {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  height: 120px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: rgb(80, 131, 189);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+/* Desktop */
+@media screen and (min-width: 1300px) {
+  /*article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: auto;
+  }*/
+
+  .galleri {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .category_list_container {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
