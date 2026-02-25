@@ -4,23 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
     <title>producct</title>
   </head>
   <body>
-    <button>
-      <a href="productlist.html">Back</a>
-    </button>
-    <article>
-      <a href="product.html" class="product_card">
+    <main class="product_page">
+      <a href="productlist.html" class="back">← Back</a>
+
+      <div class="product_image">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1532.webp"
           alt="Sort T-shirt"
         />
-        <h3>Sort T-shirt</h3>
-        <p class="old_price">199 kr.</p>
-        <p class="price">99 kr.</p>
-      </a>
-    </article>
-    <button>ADD TO BASKET</button>
+
+        <article class="product">
+          <div class="product_text">
+            <h1>Sort T-shirt</h1>
+            <p class="old_price">199 kr.</p>
+            <p class="price">99 kr.</p>
+            <button class="add_to_basket">ADD TO BASKET</button>
+          </div>
+        </article>
+      </div>
+    </main>
   </body>
 </html>
