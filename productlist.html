@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
+    <script src="js/productlist.js" defer></script>
     <title>productlist</title>
   </head>
   <body>
@@ -49,23 +50,19 @@
         </a>
       </article>
 
-      <article>
-        <!-- Kopieret for at teste mange produkter -->
-        <a href="product.html" class="product_card">
-          <img src="image/troje.webp" alt="T-shirt" />
-          <h3>Jakke</h3>
-          <p class="price">199 kr.</p>
-        </a>
-      </article>
-
-      <article>
-        <a href="product.html" class="product_card_sale">
-          <img src="image/troje.webp" alt="T-shirt" />
-          <h3>Cap</h3>
-          <p class="old_price">199 kr.</p>
-          <p class="price">99 kr.</p>
-        </a>
-      </article>
+      <!--denne section er a sat udenom article. har taget billede af allans site. tjel om det skal laves om til hans.-->
+      <a href="product.html">
+        <article>
+          <a href="product.html" class="product_card_sale">
+            <img src="image/troje.webp" alt="T-shirt" />
+            <h3>Cap</h3>
+            <p class="old_price">199 kr.</p>
+            <p class="price">99 kr.</p>
+            <p class="procent">50% Off</p>
+            <span class="sold_label">Udsolgt</span>
+          </a>
+        </article>
+      </a>
     </section>
   </body>
 </html>
