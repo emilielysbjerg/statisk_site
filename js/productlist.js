@@ -19,7 +19,7 @@ function showData(json) {
 
     markup += `
           <article>
-          <a href="product.html" class="product_card_sale">
+          <a href="product.html?id=${product.id}" class="product_card_sale">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="product image" </>
            <h3>${product.productdisplayname}</h3>
             <p class="old_price">199 kr.</p>

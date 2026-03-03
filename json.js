@@ -10,8 +10,8 @@ function getData() {
 
 function showData(json) {
   console.log(data);
-  json.forEach((fisk) => {
-    ` <a href="productlist.html">kategori>$(fisk.category)</a>`;
+  json.forEach((id) => {
+    ` <a href="productlist.html">kategori>$(id.category)</a>`;
   });
 }
 getData();
