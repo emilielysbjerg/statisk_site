@@ -14,7 +14,7 @@ function showData(data) {
   let markup = "";
   data.forEach(
     (category) =>
-      (markup += `<a href="productlist.html?category=${category.category}">${category.category}</a>`),
+      (markup += `<a class="category_item" href="productlist.html?category=${category.category}">${category.category}</a>`),
   );
   container.innerHTML = markup;
 }

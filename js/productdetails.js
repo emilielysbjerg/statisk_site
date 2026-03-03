@@ -21,7 +21,7 @@ function showData(json) {
         />
     <div class="product_text">
             <h1>Sort T-shirt${json.productdisplayname}</h1>
-            <p class="old_price">199 kr.</p>
+            <p class="old_price"></p>
             <p class="price">${json.price}kr.</p>
             <button class="add_to_basket">ADD TO BASKET</button>
           </div>`;

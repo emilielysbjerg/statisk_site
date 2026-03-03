@@ -18,14 +18,18 @@ function showData(json) {
     console.log(product);
 
     markup += `
-          <article>
+          <article class="${product.soldout && "udsolgt"}">
           <a href="product.html?id=${product.id}" class="product_card_sale">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="product image" </>
            <h3>${product.productdisplayname}</h3>
-            <p class="old_price">199 kr.</p>
-               <p class="price">${product.price}</p>
-            <p class="procent">${product.discount}%</p>
-            <span class="sold_label">Udsolgt</span>
+
+            ${product.discount ? `<p class="old_price">${product.price}</p>` : ""}
+
+
+            <p class="price">${product.price}</p>
+            <p class="procent"> ${product.discount ? `Nedsat ${product.discount}%` : ""}</p>
+          
+           
           </a>
         </article>
     `;

@@ -94,6 +94,13 @@ Page layout */
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
+.udsolgt {
+  opacity: 0.5;
+}
+.udsolgt::before {
+  content: "Nissefest";
+  position: absolute;
+}
 
 a {
   text-decoration: none; /* fjerner streg under alle links */
