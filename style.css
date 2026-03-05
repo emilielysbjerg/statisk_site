@@ -36,7 +36,7 @@ footer {
 .category_list_container {
   display: grid;
   grid-template-columns: 1fr; /* 1 kolonne på mobil */
-  gap: 0.5rem;
+  gap: 1.5rem;
   padding: 2%;
 }
 
@@ -57,6 +57,8 @@ Button {
   color: white;
   text-decoration: none;
   border-radius: 0.3rem;
+  margin: 0.3rem;
+  border: none;
 }
 
 .back {
