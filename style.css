@@ -98,7 +98,7 @@ Page layout */
   opacity: 0.5;
 }
 .udsolgt::before {
-  content: "Nissefest";
+  content: "Udsolgt";
   position: absolute;
 }
 
